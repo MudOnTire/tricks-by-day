@@ -1,3 +1,7 @@
-![logo](./src/assets/logo.png =250x)
+<div align="center">
+![logo](./src/assets/logo-480.png)
+</div>
 
-### [2020-07-05: Custome Context Menu](https://codepen.io/mudontire/pen/ZEQvRNX)
+# Catalog
+
+2020-07-05: [Custome Context Menu](https://codepen.io/mudontire/pen/ZEQvRNX)
