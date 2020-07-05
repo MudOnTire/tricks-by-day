@@ -1,6 +1,4 @@
-<div align="center">
 ![logo](./src/assets/logo-480.png)
-</div>
 
 # Catalog
 
