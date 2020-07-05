@@ -1,0 +1,53 @@
+@import "vars";
+
+/*
+  Layout
+*/
+
+/*
+  Screen size media query
+*/
+@mixin mobile {
+  @media screen and (max-width: $sm - 0.02px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $sm) and (max-width: $lg - 0.02px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media screen and (min-width: $sm) and (max-width: $md - 0.02px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media screen and (min-width: $md) and (max-width: $lg - 0.02px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin pc-lg {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}
+
+/*
+  Set bg and text color
+*/
+// set bg and text color
+@mixin set-bg($bg) {
+  background-color: $bg;
+  color: set-text-color(($bg));
+}

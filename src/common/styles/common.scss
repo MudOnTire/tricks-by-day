@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.safe-area {
+  @include pc {
+    width: $safe-area-pc;
+  }
+
+  @include tablet-landscape {
+    width: $safe-area-tl;
+  }
+
+  @include tablet-portrait {
+    width: $safe-area-tp;
+  }
+
+  @include mobile {
+    width: $safe-area-mb;
+  }
+}
