@@ -2,10 +2,16 @@
   color: $title;
 }
 .catalog {
-  padding: 40px;
+  padding: 20px;
   list-style: none;
+  display: flex;
 
   li {
     padding: 12px 0;
+    width: 25%;
+
+    img {
+      width: 100%;
+    }
   }
 }
