@@ -67,6 +67,6 @@ function hideMenu(e) {
 
 document.addEventListener("contextmenu", (e)=>{
   e.preventDefault();
-  showMenu();
+  showMenu(e);
 });
 document.addEventListener("click", hideMenu);

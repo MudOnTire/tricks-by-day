@@ -1,3 +1,7 @@
+body {
+  background-color: #f0f2f7;
+}
+
 .title {
   color: $title;
 }
@@ -5,13 +9,39 @@
   padding: 20px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 
   li {
-    padding: 12px 0;
+    padding: 12px;
     width: 25%;
+
+    @include tablet-landscape {
+      width: 33.3333%;
+    }
+    @include tablet-portrait {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
 
     img {
       width: 100%;
+    }
+
+    .title {
+      color: #333;
+    }
+
+    .time {
+      margin-top: 6px;
+      font-size: 12px;
+      color: #888;
     }
   }
 }
