@@ -15,6 +15,9 @@ body {
     padding: 12px;
     width: 25%;
 
+    @include pc-lg {
+      width: 20%;
+    }
     @include tablet-landscape {
       width: 33.3333%;
     }
@@ -30,11 +33,39 @@ body {
       text-decoration: none;
     }
 
+    .img-box {
+      $img-ratio: 0.5625;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+
+      height: 25vw * $img-ratio;
+
+      @include pc-lg {
+        height: 20vw * $img-ratio;
+      }
+      
+      @include tablet-landscape {
+        height: 33vw * $img-ratio;
+      }
+
+      @include tablet-portrait {
+        height: 50vw * $img-ratio;
+      }
+
+      @include mobile {
+        height: 100vw * $img-ratio;
+      }
+    }
+
     img {
       width: 100%;
     }
 
     .title {
+      margin-top: 16px;
       color: #333;
     }
 
