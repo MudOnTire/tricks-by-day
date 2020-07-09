@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 80%;
+  transition: 0.5s;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.img.circle {
+  background: url("http://source.unsplash.com/random/1920x1080") no-repeat center
+    center;
+  clip-path: circle(100px at center);
+
+  &:hover {
+    clip-path: circle(100% at center);
+  }
+}
+
+.img.inset {
+  background: url("http://source.unsplash.com/random/800x800") no-repeat center
+    center;
+  clip-path: inset(20%, 20%, 20%, 20%);
+}
