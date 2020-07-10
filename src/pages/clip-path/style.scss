@@ -18,7 +18,7 @@ h1 {
   cursor: pointer;
 }
 
-.img.circle {
+.circle {
   background: url("http://source.unsplash.com/random/1000x1000") no-repeat
     center center;
   background-size: cover;
@@ -29,12 +29,22 @@ h1 {
   }
 }
 
-.img.inset {
+.inset {
   background: url("http://source.unsplash.com/random/1100x1100") no-repeat center
     center;
   clip-path: inset(0px);
 
   &:active {
     clip-path: inset(200px);
+  }
+}
+
+.polygon{
+  background: url("http://source.unsplash.com/random/1200x1200") no-repeat center center;
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+
+  &:active {
+    transform:rotate(360deg);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
