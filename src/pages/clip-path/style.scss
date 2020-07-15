@@ -86,11 +86,6 @@ h1 {
     background: url("http://source.unsplash.com/random/1920x1080") no-repeat
       center center;
     background-size: cover;
-    &:before {
-      font-size: 40px;
-      color: pink;
-      content: "foreground";
-    }
   }
 
   .background {
@@ -98,10 +93,5 @@ h1 {
     background: url("http://source.unsplash.com/random/1921x1081") no-repeat
       center center;
     background-size: cover;
-    &:before {
-      font-size: 40px;
-      color: lightskyblue;
-      content: "background";
-    }
   }
 }

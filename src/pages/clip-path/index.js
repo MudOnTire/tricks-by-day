@@ -3,12 +3,12 @@ import "./style.scss";
 let percentage;
 let direction = 0; // 0: 正向，1: 反向
 
-window.onscroll = function (e) {
+function update() {
   const parallax = document.querySelector(".parallax");
   const foreground = parallax.querySelector(".foreground");
   const background = parallax.querySelector(".background");
 
-  // 正向, foreground在前, 
+  // 正向, foreground在前,
   if (window.scrollY === 0 && direction !== 0) {
     direction = 0;
     foreground.style.zIndex = "2";
@@ -31,9 +31,6 @@ window.onscroll = function (e) {
     percentage = window.scrollY / parallax.offsetTop;
   }
 
-  console.log("direction", direction);
-  console.log("percentage", percentage);
-
   let radius =
     percentage *
     Math.sqrt(foreground.clientWidth ** 2 + foreground.clientHeight ** 2);
@@ -42,4 +39,6 @@ window.onscroll = function (e) {
   } else if (direction === 1) {
     background.style["clip-path"] = `circle(${radius + "px"} at 100% 100%)`;
   }
-};
+}
+
+window.onscroll = update;
