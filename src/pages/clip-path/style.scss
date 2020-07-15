@@ -1,10 +1,10 @@
 html,
 body {
-  height: 100%;
+  width: 100%;
 }
 
 h1 {
-  margin-top: 300px;
+  margin: 200px 0 100px;
   text-align: center;
   line-height: 100px;
   font-size: 66px;
@@ -12,7 +12,7 @@ h1 {
 }
 
 .img {
-  margin: 20px auto 60px;
+  margin: 0 auto 60px;
   width: 1000px;
   height: 1000px;
   transition: 0.5s;
@@ -58,5 +58,49 @@ h1 {
 
   &:active {
     clip-path: ellipse(500px 500px at 50% 50%);
+  }
+}
+
+.parallax {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  .img {
+    width: 100%;
+  }
+
+  .foreground,
+  .background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .foreground {
+    z-index: 2;
+    background: url("http://source.unsplash.com/random/1920x1080") no-repeat
+      center center;
+    background-size: cover;
+    &:before {
+      font-size: 40px;
+      color: pink;
+      content: "foreground";
+    }
+  }
+
+  .background {
+    z-index: 1;
+    background: url("http://source.unsplash.com/random/1921x1081") no-repeat
+      center center;
+    background-size: cover;
+    &:before {
+      font-size: 40px;
+      color: lightskyblue;
+      content: "background";
+    }
   }
 }
