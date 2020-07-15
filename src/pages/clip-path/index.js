@@ -21,6 +21,7 @@ window.onscroll = function (e) {
     direction = 1;
     foreground.style.zIndex = "1";
     background.style.zIndex = "2";
+    background.style["clip-path"] = "circle(0 at 100% 100%)";
     foreground.style["clip-path"] = "";
   }
 
