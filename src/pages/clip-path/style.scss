@@ -1,6 +1,7 @@
 html,
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -11,18 +12,36 @@ h1 {
   color: #444;
 }
 
-.img {
-  margin: 0 auto 60px;
+h2 {
+  margin: 60px 0;
+  font-size: 48px;
+  color: #666;
+  text-align: center;
+}
+
+.img-box {
+  margin: 0 auto;
   width: 1000px;
   height: 1000px;
-  transition: 0.5s;
-  cursor: pointer;
+  background-color: lightslategray;
+
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.inset {
+  clip-path: inset(0);
+
+  &:active {
+    clip-path: inset(100px 200px 10% 20% round 20px);
+  }
 }
 
 .circle {
-  background: url("http://source.unsplash.com/random/1000x1000") no-repeat
-    center center;
-  background-size: cover;
   clip-path: circle(100px at center);
 
   &:hover {
@@ -30,19 +49,7 @@ h1 {
   }
 }
 
-.inset {
-  background: url("http://source.unsplash.com/random/1100x1100") no-repeat
-    center center;
-  clip-path: inset(0px);
-
-  &:active {
-    clip-path: inset(200px);
-  }
-}
-
 .polygon {
-  background: url("http://source.unsplash.com/random/1200x1200") no-repeat
-    center center;
   clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
 
   &:active {
@@ -52,8 +59,6 @@ h1 {
 }
 
 .ellipse {
-  background: url("http://source.unsplash.com/random/1300x1300") no-repeat
-    center center;
   clip-path: ellipse(200px 500px at 50% 50%);
 
   &:active {
@@ -93,5 +98,38 @@ h1 {
     background: url("http://source.unsplash.com/random/1921x1081") no-repeat
       center center;
     background-size: cover;
+  }
+}
+
+.geometry {
+  .img {
+    background: url("http://source.unsplash.com/random/1000x1000") no-repeat
+      center center;
+    background-size: cover;
+    margin: 40px auto;
+    padding: 30px;
+    border: 20px solid pink;
+  }
+
+  .margin-box {
+    clip-path: margin-box circle(50% at 50% 50%);
+  }
+  .border-box {
+    clip-path: border-box circle(50% at 50% 50%);
+  }
+  .padding-box {
+    clip-path: padding-box circle(50% at 50% 50%);
+  }
+  .content-box {
+    clip-path: content-box circle(50% at 50% 50%);
+  }
+  .fill-box {
+    clip-path: fill-box circle(50% at 50% 50%);
+  }
+  .stroke-box {
+    clip-path: stroke-box circle(50% at 50% 50%);
+  }
+  .view-box {
+    clip-path: view-box circle(50% at 50% 50%);
   }
 }
