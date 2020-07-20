@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #220954;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+
+  nav {
+    position: relative;
+    width: 20%;
+    float: right;
+    background-color: #5923c6;
+    height: 100vh;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #fff;
+    padding: 2rem;
+    clip-path: url("#clipPath");
+
+    #close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      color: #946be7;
+      font-size: 14px;
+      background:none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 1.4rem 0;
+        font-weight: bold;
+      }
+    }
+
+    p {
+      color: #946be7;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+  }
+}
+
+h1 {
+  color: #fff;
+  margin: 10rem 0 0 10rem;
+  font-size: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  font-size: 1.4rem;
+  background: none;
+  border: 3px solid purple;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0.1);
+  }
+}
+
+circle {
+  transform-origin: 50% 50%;
+}

@@ -46,7 +46,7 @@ body {
       @include pc-lg {
         height: 20vw * $img-ratio;
       }
-      
+
       @include tablet-landscape {
         height: 33vw * $img-ratio;
       }
@@ -60,7 +60,8 @@ body {
       }
     }
 
-    img {
+    img,
+    video {
       max-width: 100%;
       max-height: 100%;
     }
