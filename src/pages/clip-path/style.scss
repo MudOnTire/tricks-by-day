@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -49,20 +50,19 @@ h2 {
   }
 }
 
-.polygon {
-  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
-
-  &:active {
-    transform: rotate(720deg);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
-
 .ellipse {
   clip-path: ellipse(200px 500px at 50% 50%);
 
   &:active {
     clip-path: ellipse(500px 500px at 50% 50%);
+  }
+}
+
+.polygon {
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+
+  &:active {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
