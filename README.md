@@ -13,6 +13,6 @@
 
 2020-07-08: JavaScript Private Fields 
 
-2020-07-09: CSS clip-path
+2020-07-09: [CSS clip-path](https://codepen.io/mudontire/pen/XWXoJpJ)
 
 2020-07-10: [Pop-up Menus witgh CSS clip-path and GSAP](https://codepen.io/mudontire/pen/abdPzNv)

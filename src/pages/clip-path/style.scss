@@ -34,38 +34,7 @@ h2 {
   }
 }
 
-// basic shapes
-.inset {
-  clip-path: inset(0);
-
-  &:active {
-    clip-path: inset(100px 200px 10% 20% round 20px);
-  }
-}
-
-.circle {
-  clip-path: circle(100px at center);
-
-  &:hover {
-    clip-path: circle(100% at center);
-  }
-}
-
-.ellipse {
-  clip-path: ellipse(200px 500px at 50% 50%);
-
-  &:active {
-    clip-path: ellipse(500px 500px at 50% 50%);
-  }
-}
-
-.polygon {
-  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
-
-  &:active {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
+// Examples
 
 .parallax {
   width: 100%;
@@ -99,6 +68,39 @@ h2 {
     background: url("http://source.unsplash.com/random/1921x1081") no-repeat
       center center;
     background-size: cover;
+  }
+}
+
+// basic shapes
+.inset {
+  clip-path: inset(0);
+
+  &:active {
+    clip-path: inset(100px 200px 10% 20% round 20px);
+  }
+}
+
+.circle {
+  clip-path: circle(100px at center);
+
+  &:hover {
+    clip-path: circle(100% at center);
+  }
+}
+
+.ellipse {
+  clip-path: ellipse(200px 500px at 50% 50%);
+
+  &:active {
+    clip-path: ellipse(500px 500px at 50% 50%);
+  }
+}
+
+.polygon {
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+
+  &:active {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
