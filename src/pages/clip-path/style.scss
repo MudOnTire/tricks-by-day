@@ -34,6 +34,7 @@ h2 {
   }
 }
 
+// basic shapes
 .inset {
   clip-path: inset(0);
 
@@ -101,35 +102,13 @@ h2 {
   }
 }
 
-.geometry {
-  .img {
-    background: url("http://source.unsplash.com/random/1000x1000") no-repeat
-      center center;
-    background-size: cover;
-    margin: 40px auto;
-    padding: 30px;
-    border: 20px solid pink;
-  }
+// clip source
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
-  .margin-box {
-    clip-path: margin-box circle(50% at 50% 50%);
-  }
-  .border-box {
-    clip-path: border-box circle(50% at 50% 50%);
-  }
-  .padding-box {
-    clip-path: padding-box circle(50% at 50% 50%);
-  }
-  .content-box {
-    clip-path: content-box circle(50% at 50% 50%);
-  }
-  .fill-box {
-    clip-path: fill-box circle(50% at 50% 50%);
-  }
-  .stroke-box {
-    clip-path: stroke-box circle(50% at 50% 50%);
-  }
-  .view-box {
-    clip-path: view-box circle(50% at 50% 50%);
-  }
+.svg-circle {
+  clip-path: url("#svgCircle");
 }

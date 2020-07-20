@@ -18,11 +18,27 @@ ${require('Src/components/header/index.html')}
 </div>
 <h2>Ellipse (click)</h2>
 <div class="img-box">
-  <img class="img ellipse" src="http://source.unsplash.com/random/1300x1300" />
+  <img class="img ellipse" src="http://source.unsplash.com/random/1200x1200" />
 </div>
 <h2>Polygon (click)</h2>
 <div class="img-box">
-  <img class="img polygon" src="http://source.unsplash.com/random/1200x1200" />
+  <img class="img polygon" src="http://source.unsplash.com/random/1300x1300" />
+</div>
+
+<h1>Clip Source</h1>
+<h2>SVG Circle</h2>
+<div>
+  <svg>
+    <defs>
+      <clipPath id="svgCircle">
+        <circle cx="500" cy="500" r="400" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <div class="img-box">
+    <img class="img svg-circle" src="http://source.unsplash.com/random/1400x1400" />
+  </div>
 </div>
 
 ${require('Src/components/footer/index.html')}
