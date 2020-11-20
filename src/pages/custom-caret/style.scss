@@ -1,0 +1,27 @@
+.input-box {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+#caret {
+  position: absolute;
+  left: 20px;
+  height: 60px;
+  width: 8px;
+  background-color: #778899;
+}
+
+#hiddenInput {
+  font-size: 40px;
+  line-height: 60px;
+  padding: 0 20px;
+  width: 100%;
+  border: none;
+  caret-color: transparent;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
