@@ -34,7 +34,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Src: path.resolve(__dirname, "../src"),
+      Src: path.resolve(__dirname, "../src")
     },
   },
   module: {
@@ -99,7 +99,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
-      },
+      }
     ],
   },
   plugins: [
